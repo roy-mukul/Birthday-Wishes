@@ -8,6 +8,14 @@ const App: React.FC = () => {
   const birthdayPersonName = "Mrunali"; // Replace with the actual name
   const senderName = "Mukul"; // Replace with your name
 
+  const images = [
+    "https://picsum.photos/id/1011/400/500",
+    "https://picsum.photos/id/1025/400/500",
+    "https://picsum.photos/id/103/400/500",
+    "https://picsum.photos/id/219/400/500",
+    "https://picsum.photos/id/30/400/500",
+  ];
+
   return (
     <div className="relative min-h-screen w-full bg-gradient-to-br from-purple-500 via-pink-500 to-red-500 overflow-hidden font-poppins">
       {/* Decorative SVG Shapes */}
@@ -22,7 +30,7 @@ const App: React.FC = () => {
         <div className="w-full max-w-lg mx-auto">
           <Header name={birthdayPersonName} />
           <ImageCard 
-            imageUrl="https://picsum.photos/id/1011/400/500" 
+            imageUrls={images} 
             caption="A special day for a special person." 
           />
           <MessageSection />
